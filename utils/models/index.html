@@ -11,21 +11,25 @@
       
       
       
+        <link rel="prev" href="../plotter/">
       
       
-      <link rel="icon" href="../../../img/favicon.ico">
+        <link rel="next" href="../../examples/CIFAR10_deduplication/">
+      
+      
+      <link rel="icon" href="../../img/favicon.ico">
       <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.6">
     
     
       
-        <title>Brute force - Imagededup</title>
+        <title>Custom Models - Imagededup</title>
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.50c56a3b.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.50c56a3b.min.css">
       
         
-        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -44,7 +48,7 @@
       
     
     
-    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -68,7 +72,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#class-bruteforce" class="md-skip">
+        <a href="#class-custommodel" class="md-skip">
           Skip to content
         </a>
       
@@ -84,9 +88,9 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../../.." title="Imagededup" class="md-header__button md-logo" aria-label="Imagededup" data-md-component="logo">
+    <a href="../.." title="Imagededup" class="md-header__button md-logo" aria-label="Imagededup" data-md-component="logo">
       
-  <img src="../../../img/logo.svg" alt="logo">
+  <img src="../../img/logo.svg" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -103,7 +107,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Brute force
+              Custom Models
             
           </span>
         </div>
@@ -190,9 +194,9 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../.." title="Imagededup" class="md-nav__button md-logo" aria-label="Imagededup" data-md-component="logo">
+    <a href="../.." title="Imagededup" class="md-nav__button md-logo" aria-label="Imagededup" data-md-component="logo">
       
-  <img src="../../../img/logo.svg" alt="logo">
+  <img src="../../img/logo.svg" alt="logo">
 
     </a>
     Imagededup
@@ -219,7 +223,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../.." class="md-nav__link">
+      <a href="../.." class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -276,7 +280,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../user_guide/finding_duplicates/" class="md-nav__link">
+      <a href="../../user_guide/finding_duplicates/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -297,7 +301,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../user_guide/encoding_generation/" class="md-nav__link">
+      <a href="../../user_guide/encoding_generation/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -318,7 +322,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../user_guide/custom_model/" class="md-nav__link">
+      <a href="../../user_guide/custom_model/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -339,7 +343,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../user_guide/plotting_duplicates/" class="md-nav__link">
+      <a href="../../user_guide/plotting_duplicates/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -360,7 +364,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../user_guide/evaluating_performance/" class="md-nav__link">
+      <a href="../../user_guide/evaluating_performance/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -381,7 +385,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../user_guide/benchmarks/" class="md-nav__link">
+      <a href="../../user_guide/benchmarks/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -406,19 +410,21 @@
       
   
   
+    
   
   
+  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
         
           
           <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
@@ -432,7 +438,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             API reference
@@ -483,7 +489,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../methods/cnn/" class="md-nav__link">
+      <a href="../../methods/cnn/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -504,7 +510,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../methods/hashing/" class="md-nav__link">
+      <a href="../../methods/hashing/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -570,7 +576,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../evaluation/evaluation/" class="md-nav__link">
+      <a href="../../evaluation/evaluation/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -596,19 +602,21 @@
                 
   
   
+    
   
   
+  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3" checked>
         
           
           <label class="md-nav__link" for="__nav_3_3" id="__nav_3_3_label" tabindex="0">
@@ -622,7 +630,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3_3">
             <span class="md-nav__icon md-icon"></span>
             Utils
@@ -636,7 +644,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../utils/plotter/" class="md-nav__link">
+      <a href="../plotter/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -654,10 +662,28 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../../utils/models/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Custom Models
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -666,6 +692,147 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#class-custommodel" class="md-nav__link">
+    <span class="md-ellipsis">
+      class CustomModel
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="class CustomModel">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#args" class="md-nav__link">
+    <span class="md-ellipsis">
+      Args
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#class-mobilenetv3" class="md-nav__link">
+    <span class="md-ellipsis">
+      class MobilenetV3
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="class MobilenetV3">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#__init__" class="md-nav__link">
+    <span class="md-ellipsis">
+      __init__
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#forward" class="md-nav__link">
+    <span class="md-ellipsis">
+      forward
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#class-vit" class="md-nav__link">
+    <span class="md-ellipsis">
+      class ViT
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="class ViT">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#__init___1" class="md-nav__link">
+    <span class="md-ellipsis">
+      __init__
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#forward_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      forward
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#class-efficientnet" class="md-nav__link">
+    <span class="md-ellipsis">
+      class EfficientNet
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="class EfficientNet">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#__init___2" class="md-nav__link">
+    <span class="md-ellipsis">
+      __init__
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#forward_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      forward
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -730,7 +897,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../examples/CIFAR10_deduplication/" class="md-nav__link">
+      <a href="../../examples/CIFAR10_deduplication/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -758,7 +925,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../CONTRIBUTING/" class="md-nav__link">
+      <a href="../../CONTRIBUTING/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -778,7 +945,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../LICENSE/" class="md-nav__link">
+      <a href="../../LICENSE/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -816,23 +983,13 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#class-bruteforce" class="md-nav__link">
+  <a href="#class-custommodel" class="md-nav__link">
     <span class="md-ellipsis">
-      class BruteForce
+      class CustomModel
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="class BruteForce">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#__init__" class="md-nav__link">
-    <span class="md-ellipsis">
-      __init__
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="__init__">
+    <nav class="md-nav" aria-label="class CustomModel">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -848,30 +1005,30 @@
     </nav>
   
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#search" class="md-nav__link">
+      
+        <li class="md-nav__item">
+  <a href="#class-mobilenetv3" class="md-nav__link">
     <span class="md-ellipsis">
-      search
+      class MobilenetV3
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="search">
+    <nav class="md-nav" aria-label="class MobilenetV3">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#args_1" class="md-nav__link">
+  <a href="#__init__" class="md-nav__link">
     <span class="md-ellipsis">
-      Args
+      __init__
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#returns" class="md-nav__link">
+  <a href="#forward" class="md-nav__link">
     <span class="md-ellipsis">
-      Returns
+      forward
     </span>
   </a>
   
@@ -879,6 +1036,67 @@
         
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#class-vit" class="md-nav__link">
+    <span class="md-ellipsis">
+      class ViT
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="class ViT">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#__init___1" class="md-nav__link">
+    <span class="md-ellipsis">
+      __init__
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#forward_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      forward
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#class-efficientnet" class="md-nav__link">
+    <span class="md-ellipsis">
+      class EfficientNet
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="class EfficientNet">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#__init___2" class="md-nav__link">
+    <span class="md-ellipsis">
+      __init__
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#forward_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      forward
+    </span>
+  </a>
   
 </li>
         
@@ -905,42 +1123,51 @@
   
 
 
-  <h1>Brute force</h1>
+  <h1>Custom Models</h1>
 
-<h2 id="class-bruteforce">class BruteForce</h2>
-<p>Class to perform search using a Brute force.</p>
-<h3 id="__init__">__init__</h3>
-<div class="codehilite"><pre><span></span><code><span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="n">hash_dict</span><span class="p">,</span> <span class="n">distance_function</span><span class="p">)</span>
-</code></pre></div>
-
-<p>Initialize a dictionary for mapping file names and corresponding hashes and a distance function to be used for getting distance between two hash strings.</p>
+<h2 id="class-custommodel">class CustomModel</h2>
+<p>A named tuple that can be used to initialize a custom PyTorch model.</p>
 <h5 id="args">Args</h5>
 <ul>
 <li>
-<p><strong>hash_dict</strong>:  Dictionary mapping file names to corresponding hash strings {filename: hash}</p>
+<p><strong>name</strong>: The name of the custom model. Default is 'default_model'.</p>
 </li>
 <li>
-<p><strong>distance_function</strong>: A function for calculating distance between the hashes.</p>
+<p><strong>model</strong>: The PyTorch model object which is a subclass of <code>torch.nn.Module</code> and implements the <code>forward</code> method and output a tensor of shape (batch_size x features). Alternatively, a <strong>call</strong> method is also accepted.. Default is None.</p>
+</li>
+<li>
+<p><strong>transform</strong>: A function that transforms a PIL.Image object into a PyTorch tensor that will be applied to each image before being fed to the model. Should correspond to the preprocessing logic of the supplied model. Default is None.</p>
 </li>
 </ul>
-<h3 id="search">search</h3>
-<div class="codehilite"><pre><span></span><code><span class="k">def</span> <span class="nf">search</span><span class="p">(</span><span class="n">query</span><span class="p">,</span> <span class="n">tol</span><span class="p">)</span>
+<h2 id="class-mobilenetv3">class MobilenetV3</h2>
+<h3 id="__init__">__init__</h3>
+<div class="codehilite"><pre><span></span><code><span class="k">def</span> <span class="fm">__init__</span><span class="p">()</span>
 </code></pre></div>
 
-<p>Function for searching using brute force.</p>
-<h5 id="args_1">Args</h5>
-<ul>
-<li>
-<p><strong>query</strong>: hash string for which brute force needs to work.</p>
-</li>
-<li>
-<p><strong>tol</strong>: distance upto which duplicate is valid.</p>
-</li>
-</ul>
-<h5 id="returns">Returns</h5>
-<ul>
-<li><strong>List of tuples of the form [(valid_retrieval_filename1</strong>:  distance), (valid_retrieval_filename2: distance)]</li>
-</ul>
+<p>Initialize a mobilenetv3 model, cuts it at the global average pooling layer and returns the output features.</p>
+<h3 id="forward">forward</h3>
+<div class="codehilite"><pre><span></span><code><span class="k">def</span> <span class="nf">forward</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+</code></pre></div>
+
+<h2 id="class-vit">class ViT</h2>
+<h3 id="__init___1">__init__</h3>
+<div class="codehilite"><pre><span></span><code><span class="k">def</span> <span class="fm">__init__</span><span class="p">()</span>
+</code></pre></div>
+
+<p>Initialize a ViT model, takes mean of the final encoder layer outputs and returns those as features for a given image.</p>
+<h3 id="forward_1">forward</h3>
+<div class="codehilite"><pre><span></span><code><span class="k">def</span> <span class="nf">forward</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+</code></pre></div>
+
+<h2 id="class-efficientnet">class EfficientNet</h2>
+<h3 id="__init___2">__init__</h3>
+<div class="codehilite"><pre><span></span><code><span class="k">def</span> <span class="fm">__init__</span><span class="p">()</span>
+</code></pre></div>
+
+<p>Initializes an EfficientNet model, cuts it at the global average pooling layer and returns the output features.</p>
+<h3 id="forward_2">forward</h3>
+<div class="codehilite"><pre><span></span><code><span class="k">def</span> <span class="nf">forward</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+</code></pre></div>
 
 
 
@@ -987,10 +1214,10 @@
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "../../..", "features": [], "search": "../../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.e1c3ead8.min.js"></script>
+      <script src="../../assets/javascripts/bundle.e1c3ead8.min.js"></script>
       
     
   </body>
